@@ -1,0 +1,45 @@
+# Entorno virtual
+.venv/
+venv/
+
+
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de Jupyter Notebook
+.ipynb_checkpoints/
+
+# Archivos de configuración de VS Code
+.vscode/
+
+# Archivos de logs
+*.log
+
+# Archivos de cobertura de pruebas
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Archivos de distribución
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Archivos de paquetes
+*.tar.gz
+*.zip
+*.whl
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db

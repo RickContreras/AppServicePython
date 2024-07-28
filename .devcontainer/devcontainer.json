@@ -1,0 +1,31 @@
+{
+    "name": "Python 3.12 Dev Container",
+    "image": "mcr.microsoft.com/devcontainers/python:3.12",
+    "features": {
+        "ghcr.io/devcontainers/features/python:1": {
+            "version": "3.12"
+        }
+    },
+    "postCreateCommand": "python -m venv .venv && source .venv/bin/activate && pip install --upgrade pip && pip install -r requirements.txt",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "GitHub.copilot",
+                "ms-toolsai.jupyter",
+                "njpwerner.autodocstring",
+                "littlefoxteam.vscode-python-test-adapter",
+                "ms-python.isort",
+                "ms-python.black-formatter",
+                "ms-python.flake8",
+                "eamodio.gitlens",
+                "esbenp.prettier-vscode"
+            ],
+            "settings": {
+                "python.defaultInterpreterPath": ".venv/bin/python",
+                "python.terminal.activateEnvironment": true
+            }
+        }
+    }
+}
